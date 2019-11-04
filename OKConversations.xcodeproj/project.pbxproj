@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0705338E236FA28C0089E54E /* ImageCancellationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705338D236FA28C0089E54E /* ImageCancellationCommand.swift */; };
+		07AA07472358E09F00307792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA07462358E09F00307792 /* AppDelegate.swift */; };
+		07AA07502358E0A100307792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA074F2358E0A100307792 /* Assets.xcassets */; };
+		07AA07532358E0A100307792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AA07512358E0A100307792 /* LaunchScreen.storyboard */; };
+		07AA076B2358E0DB00307792 /* ConversationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA076A2358E0DB00307792 /* ConversationProtocol.swift */; };
+		07AA076E2358E2E600307792 /* ConversationRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA076C2358E2E600307792 /* ConversationRowCell.swift */; };
+		07AA076F2358E2E600307792 /* ConversationRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AA076D2358E2E600307792 /* ConversationRowCell.xib */; };
+		07AA07722358E32800307792 /* OKOnlineIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA07712358E32800307792 /* OKOnlineIndicatorView.swift */; };
+		07AA07742358E48600307792 /* OKCircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA07732358E48600307792 /* OKCircularImageView.swift */; };
+		07AA0878235A117600307792 /* ConversationsNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0877235A117600307792 /* ConversationsNetworkClient.swift */; };
+		07AA0B27235DFD9000307792 /* ConversationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0B26235DFD9000307792 /* ConversationsDataSource.swift */; };
+		07AA0B2A235E01E100307792 /* ConversationRowCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0B29235E01E000307792 /* ConversationRowCellViewModelFactory.swift */; };
+		07AA0B2F235E039400307792 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0B2E235E039400307792 /* Command.swift */; };
+		07AA0B31235E03C300307792 /* CommandArgumentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0B30235E03C300307792 /* CommandArgumentKey.swift */; };
+		07AA0B36235E070B00307792 /* CommandKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0B35235E070B00307792 /* CommandKey.swift */; };
+		07AA0D4C2362020900307792 /* ImageNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0D4B2362020900307792 /* ImageNetworkManagerProtocol.swift */; };
+		07AA0D4F236365FF00307792 /* ImageNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0D4E236365FF00307792 /* ImageNetworkManager.swift */; };
+		07AA0D512363662000307792 /* ConversationMessagePreviewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0D502363662000307792 /* ConversationMessagePreviewProtocol.swift */; };
+		07AA0D532363663700307792 /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0D522363663700307792 /* UserProtocol.swift */; };
+		07AA0D582363670F00307792 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0D572363670F00307792 /* User.swift */; };
+		07AA0D5A2363672600307792 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0D592363672600307792 /* Conversation.swift */; };
+		07AA0D5C2363673900307792 /* ConversationMessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0D5B2363673900307792 /* ConversationMessagePreview.swift */; };
+		07AA0DB42367761800307792 /* DummyConversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0DB32367761800307792 /* DummyConversations.swift */; };
+		07AA0DB82367786700307792 /* ConversationsViewModelContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0DB72367786600307792 /* ConversationsViewModelContext.swift */; };
+		07AA0DBA236799AC00307792 /* UIColor+OKConversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0DB9236799AC00307792 /* UIColor+OKConversations.swift */; };
+		07AA0DBC23687E6B00307792 /* AnyHashableConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0DBB23687E6B00307792 /* AnyHashableConversation.swift */; };
+		07AA0DBF2368814200307792 /* ConversationProtocol+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0DBE2368814200307792 /* ConversationProtocol+Hashable.swift */; };
+		07AA0DC12368829E00307792 /* CollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0DC02368829E00307792 /* CollectionViewCellViewModel.swift */; };
+		07AA0DC42368846800307792 /* Date+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0DC32368846800307792 /* Date+Random.swift */; };
+		07AEAA292370710A00029058 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEAA282370710A00029058 /* ConversationsViewController.swift */; };
+		07AEAA7C2370730200029058 /* CollectionViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEAA7B2370730200029058 /* CollectionViewCellViewModelProtocol.swift */; };
+		07AEAA7E2370739B00029058 /* ConversationRowCellConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEAA7D2370739A00029058 /* ConversationRowCellConfigurationCommand.swift */; };
+		175B4BE82370755700EDF975 /* CollectionViewUnravelFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175B4BE72370755700EDF975 /* CollectionViewUnravelFlowLayout.swift */; };
+		7175832945EA7762B1F6659D /* libPods-OKConversations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F3A991AD417800364D2CC7 /* libPods-OKConversations.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0705338D236FA28C0089E54E /* ImageCancellationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCancellationCommand.swift; sourceTree = "<group>"; };
+		07AA07432358E09F00307792 /* OKConversations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKConversations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AA07462358E09F00307792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07AA074F2358E0A100307792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07AA07522358E0A100307792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07AA07542358E0A100307792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AA076A2358E0DB00307792 /* ConversationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationProtocol.swift; sourceTree = "<group>"; };
+		07AA076C2358E2E600307792 /* ConversationRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowCell.swift; sourceTree = "<group>"; };
+		07AA076D2358E2E600307792 /* ConversationRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversationRowCell.xib; sourceTree = "<group>"; };
+		07AA07712358E32800307792 /* OKOnlineIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKOnlineIndicatorView.swift; sourceTree = "<group>"; };
+		07AA07732358E48600307792 /* OKCircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OKCircularImageView.swift; sourceTree = "<group>"; };
+		07AA0877235A117600307792 /* ConversationsNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsNetworkClient.swift; sourceTree = "<group>"; };
+		07AA0B26235DFD9000307792 /* ConversationsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsDataSource.swift; sourceTree = "<group>"; };
+		07AA0B29235E01E000307792 /* ConversationRowCellViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowCellViewModelFactory.swift; sourceTree = "<group>"; };
+		07AA0B2E235E039400307792 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		07AA0B30235E03C300307792 /* CommandArgumentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandArgumentKey.swift; sourceTree = "<group>"; };
+		07AA0B35235E070B00307792 /* CommandKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandKey.swift; sourceTree = "<group>"; };
+		07AA0D4B2362020900307792 /* ImageNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageNetworkManagerProtocol.swift; path = ../../Conversations/Networking/ImageNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		07AA0D4E236365FF00307792 /* ImageNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageNetworkManager.swift; path = ../../Conversations/Networking/ImageNetworkManager.swift; sourceTree = "<group>"; };
+		07AA0D502363662000307792 /* ConversationMessagePreviewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationMessagePreviewProtocol.swift; sourceTree = "<group>"; };
+		07AA0D522363663700307792 /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
+		07AA0D572363670F00307792 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07AA0D592363672600307792 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		07AA0D5B2363673900307792 /* ConversationMessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationMessagePreview.swift; sourceTree = "<group>"; };
+		07AA0DB32367761800307792 /* DummyConversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyConversations.swift; sourceTree = "<group>"; };
+		07AA0DB72367786600307792 /* ConversationsViewModelContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewModelContext.swift; sourceTree = "<group>"; };
+		07AA0DB9236799AC00307792 /* UIColor+OKConversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+OKConversations.swift"; sourceTree = "<group>"; };
+		07AA0DBB23687E6B00307792 /* AnyHashableConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyHashableConversation.swift; sourceTree = "<group>"; };
+		07AA0DBE2368814200307792 /* ConversationProtocol+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationProtocol+Hashable.swift"; sourceTree = "<group>"; };
+		07AA0DC02368829E00307792 /* CollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		07AA0DC32368846800307792 /* Date+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Random.swift"; sourceTree = "<group>"; };
+		07AEAA282370710A00029058 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		07AEAA7B2370730200029058 /* CollectionViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCellViewModelProtocol.swift; path = OKConversations/Conversations/Models/Protocols/CollectionViewCellViewModelProtocol.swift; sourceTree = SOURCE_ROOT; };
+		07AEAA7D2370739A00029058 /* ConversationRowCellConfigurationCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowCellConfigurationCommand.swift; sourceTree = "<group>"; };
+		175B4BE72370755700EDF975 /* CollectionViewUnravelFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUnravelFlowLayout.swift; sourceTree = "<group>"; };
+		9FA3F5E6F4724E8774ABBB5D /* Pods-OKConversations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKConversations.release.xcconfig"; path = "Target Support Files/Pods-OKConversations/Pods-OKConversations.release.xcconfig"; sourceTree = "<group>"; };
+		A4516ACF0DAB50025909D378 /* Pods-OKConversations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKConversations.debug.xcconfig"; path = "Target Support Files/Pods-OKConversations/Pods-OKConversations.debug.xcconfig"; sourceTree = "<group>"; };
+		B9F3A991AD417800364D2CC7 /* libPods-OKConversations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKConversations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AA07402358E09F00307792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7175832945EA7762B1F6659D /* libPods-OKConversations.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07053390236FBBD60089E54E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				07AA0877235A117600307792 /* ConversationsNetworkClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		07053391236FBCF30089E54E /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				07AA0B26235DFD9000307792 /* ConversationsDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		07AA073A2358E09F00307792 = {
+			isa = PBXGroup;
+			children = (
+				07AA07452358E09F00307792 /* OKConversations */,
+				07AA07442358E09F00307792 /* Products */,
+				B95CD735461688646566F9EE /* Pods */,
+				6341988B412ED973E0B01B26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07AA07442358E09F00307792 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AA07432358E09F00307792 /* OKConversations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AA07452358E09F00307792 /* OKConversations */ = {
+			isa = PBXGroup;
+			children = (
+				07AA07462358E09F00307792 /* AppDelegate.swift */,
+				07AA074F2358E0A100307792 /* Assets.xcassets */,
+				07AA0B34235E047300307792 /* Conversations */,
+				07AA07542358E0A100307792 /* Info.plist */,
+				07AA07512358E0A100307792 /* LaunchScreen.storyboard */,
+				07AEAA792370724400029058 /* Shared */,
+			);
+			path = OKConversations;
+			sourceTree = "<group>";
+		};
+		07AA07692358E0B800307792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07AA0D56236366DC00307792 /* Concrete */,
+				07AA0DB72367786600307792 /* ConversationsViewModelContext.swift */,
+				07AA0DB32367761800307792 /* DummyConversations.swift */,
+				07AA0D55236366B800307792 /* Protocols */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07AA07702358E2EB00307792 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				07AA076C2358E2E600307792 /* ConversationRowCell.swift */,
+				07AA076D2358E2E600307792 /* ConversationRowCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		07AA07752358E4AB00307792 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07AA07732358E48600307792 /* OKCircularImageView.swift */,
+				07AA07712358E32800307792 /* OKOnlineIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07AA0B28235E016400307792 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				07AEAA7D2370739A00029058 /* ConversationRowCellConfigurationCommand.swift */,
+				0705338D236FA28C0089E54E /* ImageCancellationCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		07AA0B33235E040B00307792 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				07AA0B29235E01E000307792 /* ConversationRowCellViewModelFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		07AA0B34235E047300307792 /* Conversations */ = {
+			isa = PBXGroup;
+			children = (
+				07AA07702358E2EB00307792 /* Cells */,
+				07AA0B28235E016400307792 /* Commands */,
+				07053391236FBCF30089E54E /* Data Source */,
+				07AA0B33235E040B00307792 /* Factories */,
+				07AA07692358E0B800307792 /* Models */,
+				07053390236FBBD60089E54E /* Networking */,
+				175B4BE923707AD200EDF975 /* View Controller */,
+			);
+			path = Conversations;
+			sourceTree = "<group>";
+		};
+		07AA0D542363667F00307792 /* Command Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				07AEAA7B2370730200029058 /* CollectionViewCellViewModelProtocol.swift */,
+				07AA0DC02368829E00307792 /* CollectionViewCellViewModel.swift */,
+				07AA0B2E235E039400307792 /* Command.swift */,
+				07AA0B30235E03C300307792 /* CommandArgumentKey.swift */,
+				07AA0B35235E070B00307792 /* CommandKey.swift */,
+			);
+			path = "Command Pattern";
+			sourceTree = "<group>";
+		};
+		07AA0D55236366B800307792 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				07AA076A2358E0DB00307792 /* ConversationProtocol.swift */,
+				07AA0D502363662000307792 /* ConversationMessagePreviewProtocol.swift */,
+				07AA0D522363663700307792 /* UserProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		07AA0D56236366DC00307792 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				07AA0DBB23687E6B00307792 /* AnyHashableConversation.swift */,
+				07AA0D592363672600307792 /* Conversation.swift */,
+				07AA0D5B2363673900307792 /* ConversationMessagePreview.swift */,
+				07AA0D572363670F00307792 /* User.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		07AA0DBD2368811300307792 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07AA0DB9236799AC00307792 /* UIColor+OKConversations.swift */,
+				07AA0DBE2368814200307792 /* ConversationProtocol+Hashable.swift */,
+				07AA0DC32368846800307792 /* Date+Random.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		07AEAA792370724400029058 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				175B4BE62370753C00EDF975 /* Collection View */,
+				07AA0DBD2368811300307792 /* Extensions */,
+				07AEAA7A2370726200029058 /* Networking */,
+				07AA0D542363667F00307792 /* Command Pattern */,
+				07AA07752358E4AB00307792 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		07AEAA7A2370726200029058 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				07AA0D4E236365FF00307792 /* ImageNetworkManager.swift */,
+				07AA0D4B2362020900307792 /* ImageNetworkManagerProtocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		175B4BE62370753C00EDF975 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				175B4BE72370755700EDF975 /* CollectionViewUnravelFlowLayout.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		175B4BE923707AD200EDF975 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				07AEAA282370710A00029058 /* ConversationsViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		6341988B412ED973E0B01B26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9F3A991AD417800364D2CC7 /* libPods-OKConversations.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B95CD735461688646566F9EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4516ACF0DAB50025909D378 /* Pods-OKConversations.debug.xcconfig */,
+				9FA3F5E6F4724E8774ABBB5D /* Pods-OKConversations.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AA07422358E09F00307792 /* OKConversations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AA07622358E0A100307792 /* Build configuration list for PBXNativeTarget "OKConversations" */;
+			buildPhases = (
+				4EF87FF891E763A6F3396B85 /* [CP] Check Pods Manifest.lock */,
+				07AA073F2358E09F00307792 /* Sources */,
+				07AA07402358E09F00307792 /* Frameworks */,
+				07AA07412358E09F00307792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OKConversations;
+			productName = OKConversations;
+			productReference = 07AA07432358E09F00307792 /* OKConversations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AA073B2358E09F00307792 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Ariel Steinlauf";
+				TargetAttributes = {
+					07AA07422358E09F00307792 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 07AA073E2358E09F00307792 /* Build configuration list for PBXProject "OKConversations" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07AA073A2358E09F00307792;
+			productRefGroup = 07AA07442358E09F00307792 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07AA07422358E09F00307792 /* OKConversations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AA07412358E09F00307792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA07532358E0A100307792 /* LaunchScreen.storyboard in Resources */,
+				07AA07502358E0A100307792 /* Assets.xcassets in Resources */,
+				07AA076F2358E2E600307792 /* ConversationRowCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EF87FF891E763A6F3396B85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OKConversations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AA073F2358E09F00307792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA0B27235DFD9000307792 /* ConversationsDataSource.swift in Sources */,
+				07AEAA7E2370739B00029058 /* ConversationRowCellConfigurationCommand.swift in Sources */,
+				07AA0DB82367786700307792 /* ConversationsViewModelContext.swift in Sources */,
+				07AA0D512363662000307792 /* ConversationMessagePreviewProtocol.swift in Sources */,
+				07AA07472358E09F00307792 /* AppDelegate.swift in Sources */,
+				07AA0D4F236365FF00307792 /* ImageNetworkManager.swift in Sources */,
+				0705338E236FA28C0089E54E /* ImageCancellationCommand.swift in Sources */,
+				07AA076B2358E0DB00307792 /* ConversationProtocol.swift in Sources */,
+				07AA0B31235E03C300307792 /* CommandArgumentKey.swift in Sources */,
+				07AA0DBA236799AC00307792 /* UIColor+OKConversations.swift in Sources */,
+				07AA0B36235E070B00307792 /* CommandKey.swift in Sources */,
+				07AA0DC42368846800307792 /* Date+Random.swift in Sources */,
+				07AEAA7C2370730200029058 /* CollectionViewCellViewModelProtocol.swift in Sources */,
+				07AA0D582363670F00307792 /* User.swift in Sources */,
+				175B4BE82370755700EDF975 /* CollectionViewUnravelFlowLayout.swift in Sources */,
+				07AA0B2F235E039400307792 /* Command.swift in Sources */,
+				07AA0B2A235E01E100307792 /* ConversationRowCellViewModelFactory.swift in Sources */,
+				07AA07742358E48600307792 /* OKCircularImageView.swift in Sources */,
+				07AA0878235A117600307792 /* ConversationsNetworkClient.swift in Sources */,
+				07AA0D5A2363672600307792 /* Conversation.swift in Sources */,
+				07AA07722358E32800307792 /* OKOnlineIndicatorView.swift in Sources */,
+				07AA0D4C2362020900307792 /* ImageNetworkManagerProtocol.swift in Sources */,
+				07AA0DC12368829E00307792 /* CollectionViewCellViewModel.swift in Sources */,
+				07AEAA292370710A00029058 /* ConversationsViewController.swift in Sources */,
+				07AA0D532363663700307792 /* UserProtocol.swift in Sources */,
+				07AA0DBC23687E6B00307792 /* AnyHashableConversation.swift in Sources */,
+				07AA076E2358E2E600307792 /* ConversationRowCell.swift in Sources */,
+				07AA0DBF2368814200307792 /* ConversationProtocol+Hashable.swift in Sources */,
+				07AA0DB42367761800307792 /* DummyConversations.swift in Sources */,
+				07AA0D5C2363673900307792 /* ConversationMessagePreview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07AA07512358E0A100307792 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AA07522358E0A100307792 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AA07602358E0A100307792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07AA07612358E0A100307792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07AA07632358E0A100307792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4516ACF0DAB50025909D378 /* Pods-OKConversations.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OKConversations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.okcupid.OKConversations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		07AA07642358E0A100307792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA3F5E6F4724E8774ABBB5D /* Pods-OKConversations.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OKConversations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.okcupid.OKConversations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AA073E2358E09F00307792 /* Build configuration list for PBXProject "OKConversations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA07602358E0A100307792 /* Debug */,
+				07AA07612358E0A100307792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AA07622358E0A100307792 /* Build configuration list for PBXNativeTarget "OKConversations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA07632358E0A100307792 /* Debug */,
+				07AA07642358E0A100307792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AA073B2358E09F00307792 /* Project object */;
+}

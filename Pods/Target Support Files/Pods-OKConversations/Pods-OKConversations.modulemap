@@ -1,0 +1,6 @@
+module Pods_OKConversations {
+  umbrella header "Pods-OKConversations-umbrella.h"
+
+  export *
+  module * { export * }
+}

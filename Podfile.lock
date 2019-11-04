@@ -1,0 +1,16 @@
+PODS:
+  - OKImageDownloader (0.3.0)
+
+DEPENDENCIES:
+  - OKImageDownloader
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - OKImageDownloader
+
+SPEC CHECKSUMS:
+  OKImageDownloader: 67575ca7dd5c437e7b0b8d578becd2d58a3ad56b
+
+PODFILE CHECKSUM: 1799e2af3f4bee46eb8dc319597d8cb2f4c82edc
+
+COCOAPODS: 1.8.3

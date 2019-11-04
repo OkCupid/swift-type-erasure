@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		099FF4CB554BB6ED19422031B6353776 /* ImageDownloaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D0EAF0FA1863DFFE515E39BB80B58 /* ImageDownloaderError.swift */; };
+		10ADD1F58185B797D248E6E517ED9D69 /* APIUrlLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3648E435A64B66F3830C404FB0FA7AF /* APIUrlLoader.swift */; };
+		34FE40DB125FB2C6C986DB8FCED5B517 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD784131254D5C4E02D5B4756B9C0C01 /* APIRequest.swift */; };
+		4208D5F727CA36C1CCF82455D744A58E /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89A793E82029BA9CF4C7387E0BCC956 /* DataResponse.swift */; };
+		4B2D1051C001C57A4662C8C8577DD296 /* UIImage+Downloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F021E64A0FDEB3F340A550DF6B6F870 /* UIImage+Downloading.swift */; };
+		51FF8504BB481441D0A55F01EA155A67 /* OKImageDownloader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4E51DE69BB80CD59B21499EB8F4839 /* OKImageDownloader-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B6EBB9678C4D11099E20FC028490019 /* OKImageDownloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFF14D0380B58F88867525D623ACF2F /* OKImageDownloader-dummy.m */; };
+		7D0043097CA64B1AC5BB7AAC5BDD01C1 /* Pods-OKConversations-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F365F89E70F2A50C5EB11480320FC24A /* Pods-OKConversations-dummy.m */; };
+		8E126311A31C256E6F6E96F047D164F0 /* Pods-OKConversations-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 156FCB61E0CD630DAAC6AD560A7838F0 /* Pods-OKConversations-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FE347A47867511E774594B0DC389805 /* ImageDownloaderReceiptHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64457433C18AD6AC3571918BD5C12621 /* ImageDownloaderReceiptHandling.swift */; };
+		A0F89FFB826227A24BF9A37258678967 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44767B23224F52C98D8ED62FAE074D /* ImageDownloader.swift */; };
+		B37C1216D74F0E38E43665F47484FDA0 /* ImageDownloaderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289BB8A11B38ACCA6E98770CAAAC595 /* ImageDownloaderRequest.swift */; };
+		D28C8C98B4E5DA8B80F9796DC15C2BE8 /* UIImageView+ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C552C5DBAD1451DEB1A9EF8A31ACCB /* UIImageView+ImageDownloader.swift */; };
+		EA89E8DF27BFEFD887CBB2FDF753E30E /* ImageDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AF1E46C7F6A9B088568B162A74678 /* ImageDownloading.swift */; };
+		F3D128BF335D5BEE496C66AD32E0D4BA /* Int+FileSizeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016C728C090CB6E21EBA525234B04E9 /* Int+FileSizeConverter.swift */; };
+		FAFDA05367EF7F38DDC19BD10D25CA86 /* CachableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828632F7841EE288BCC21AB04491EC0 /* CachableContainer.swift */; };
+		FF05C077B58F00FB8B0CE769E777CB70 /* ImageDownloaderReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81E63B69BAF66F979468CAB38366AE8 /* ImageDownloaderReceipt.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD57D08322696E35FE6684B323C6C387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DAED14818F28FA89D3647741B00B7EA;
+			remoteInfo = OKImageDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D46F5C242A4803B16730C9CA8EB0ED6 /* libOKImageDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libOKImageDownloader.a; path = libOKImageDownloader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F021E64A0FDEB3F340A550DF6B6F870 /* UIImage+Downloading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Downloading.swift"; path = "OKImageDownloader/Classes/Extensions/UIImage+Downloading.swift"; sourceTree = "<group>"; };
+		156FCB61E0CD630DAAC6AD560A7838F0 /* Pods-OKConversations-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OKConversations-umbrella.h"; sourceTree = "<group>"; };
+		223EA7EA7F0328478A7CE006097A75F1 /* Pods-OKConversations-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OKConversations-acknowledgements.plist"; sourceTree = "<group>"; };
+		27C09D201BF6158E843150A0AF6AA7F0 /* OKImageDownloader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OKImageDownloader.modulemap; sourceTree = "<group>"; };
+		3016C728C090CB6E21EBA525234B04E9 /* Int+FileSizeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+FileSizeConverter.swift"; path = "OKImageDownloader/Classes/Extensions/Int+FileSizeConverter.swift"; sourceTree = "<group>"; };
+		3289BB8A11B38ACCA6E98770CAAAC595 /* ImageDownloaderRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderRequest.swift; path = OKImageDownloader/Classes/Models/ImageDownloaderRequest.swift; sourceTree = "<group>"; };
+		439A850F9CF9BE7AD7F9AE3905BB7E47 /* Pods-OKConversations.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OKConversations.modulemap"; sourceTree = "<group>"; };
+		4662380A49A14E14C1C87835AA6836C1 /* Pods-OKConversations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OKConversations.release.xcconfig"; sourceTree = "<group>"; };
+		4B51CD17DF32523E34246E39E8BEEE83 /* OKImageDownloader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OKImageDownloader-prefix.pch"; sourceTree = "<group>"; };
+		64457433C18AD6AC3571918BD5C12621 /* ImageDownloaderReceiptHandling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderReceiptHandling.swift; path = OKImageDownloader/Classes/Protocols/ImageDownloaderReceiptHandling.swift; sourceTree = "<group>"; };
+		6F7AF1E46C7F6A9B088568B162A74678 /* ImageDownloading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloading.swift; path = OKImageDownloader/Classes/Protocols/ImageDownloading.swift; sourceTree = "<group>"; };
+		72C552C5DBAD1451DEB1A9EF8A31ACCB /* UIImageView+ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+ImageDownloader.swift"; path = "OKImageDownloader/Classes/Extensions/UIImageView+ImageDownloader.swift"; sourceTree = "<group>"; };
+		7F4E51DE69BB80CD59B21499EB8F4839 /* OKImageDownloader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OKImageDownloader-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A828632F7841EE288BCC21AB04491EC0 /* CachableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachableContainer.swift; path = OKImageDownloader/Classes/Models/CachableContainer.swift; sourceTree = "<group>"; };
+		B81E63B69BAF66F979468CAB38366AE8 /* ImageDownloaderReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderReceipt.swift; path = OKImageDownloader/Classes/Models/ImageDownloaderReceipt.swift; sourceTree = "<group>"; };
+		BBFF14D0380B58F88867525D623ACF2F /* OKImageDownloader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OKImageDownloader-dummy.m"; sourceTree = "<group>"; };
+		BD784131254D5C4E02D5B4756B9C0C01 /* APIRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequest.swift; path = OKImageDownloader/Classes/Protocols/APIRequest.swift; sourceTree = "<group>"; };
+		C562576C460B85F67FA3A3906A00FB4D /* OKImageDownloader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OKImageDownloader.xcconfig; sourceTree = "<group>"; };
+		C7E8F4F160F923CC2D25B39E4BB82870 /* libPods-OKConversations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OKConversations.a"; path = "libPods-OKConversations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE44767B23224F52C98D8ED62FAE074D /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = OKImageDownloader/Classes/API/ImageDownloader.swift; sourceTree = "<group>"; };
+		DA8025564CD6A4053FB0D9FCE7727129 /* Pods-OKConversations-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OKConversations-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DD6D0EAF0FA1863DFFE515E39BB80B58 /* ImageDownloaderError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderError.swift; path = OKImageDownloader/Classes/Models/ImageDownloaderError.swift; sourceTree = "<group>"; };
+		E3648E435A64B66F3830C404FB0FA7AF /* APIUrlLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIUrlLoader.swift; path = OKImageDownloader/Classes/API/APIUrlLoader.swift; sourceTree = "<group>"; };
+		E77B89B0F1979076B4916E25206D5BDC /* Pods-OKConversations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OKConversations.debug.xcconfig"; sourceTree = "<group>"; };
+		F365F89E70F2A50C5EB11480320FC24A /* Pods-OKConversations-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OKConversations-dummy.m"; sourceTree = "<group>"; };
+		F89A793E82029BA9CF4C7387E0BCC956 /* DataResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResponse.swift; path = OKImageDownloader/Classes/Models/DataResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB8063CFA095D706716189ED66991DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CF2234513111B4FF64851D4FAF1239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59BF70FE8FEC370CF83026C66E903554 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B60A960AAC8016DEA7E175BF8070AEEF /* OKImageDownloader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A35F1CC48382AAD26C11B2839DEE378 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2BAB4C2AA49EBA7C278775859F03E01 /* Pods-OKConversations */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A2BAB4C2AA49EBA7C278775859F03E01 /* Pods-OKConversations */ = {
+			isa = PBXGroup;
+			children = (
+				439A850F9CF9BE7AD7F9AE3905BB7E47 /* Pods-OKConversations.modulemap */,
+				DA8025564CD6A4053FB0D9FCE7727129 /* Pods-OKConversations-acknowledgements.markdown */,
+				223EA7EA7F0328478A7CE006097A75F1 /* Pods-OKConversations-acknowledgements.plist */,
+				F365F89E70F2A50C5EB11480320FC24A /* Pods-OKConversations-dummy.m */,
+				156FCB61E0CD630DAAC6AD560A7838F0 /* Pods-OKConversations-umbrella.h */,
+				E77B89B0F1979076B4916E25206D5BDC /* Pods-OKConversations.debug.xcconfig */,
+				4662380A49A14E14C1C87835AA6836C1 /* Pods-OKConversations.release.xcconfig */,
+			);
+			name = "Pods-OKConversations";
+			path = "Target Support Files/Pods-OKConversations";
+			sourceTree = "<group>";
+		};
+		B60A960AAC8016DEA7E175BF8070AEEF /* OKImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				BD784131254D5C4E02D5B4756B9C0C01 /* APIRequest.swift */,
+				E3648E435A64B66F3830C404FB0FA7AF /* APIUrlLoader.swift */,
+				A828632F7841EE288BCC21AB04491EC0 /* CachableContainer.swift */,
+				F89A793E82029BA9CF4C7387E0BCC956 /* DataResponse.swift */,
+				CE44767B23224F52C98D8ED62FAE074D /* ImageDownloader.swift */,
+				DD6D0EAF0FA1863DFFE515E39BB80B58 /* ImageDownloaderError.swift */,
+				B81E63B69BAF66F979468CAB38366AE8 /* ImageDownloaderReceipt.swift */,
+				64457433C18AD6AC3571918BD5C12621 /* ImageDownloaderReceiptHandling.swift */,
+				3289BB8A11B38ACCA6E98770CAAAC595 /* ImageDownloaderRequest.swift */,
+				6F7AF1E46C7F6A9B088568B162A74678 /* ImageDownloading.swift */,
+				3016C728C090CB6E21EBA525234B04E9 /* Int+FileSizeConverter.swift */,
+				0F021E64A0FDEB3F340A550DF6B6F870 /* UIImage+Downloading.swift */,
+				72C552C5DBAD1451DEB1A9EF8A31ACCB /* UIImageView+ImageDownloader.swift */,
+				CD7DAFEC325EAF551E96F102BAE310A0 /* Support Files */,
+			);
+			name = OKImageDownloader;
+			path = OKImageDownloader;
+			sourceTree = "<group>";
+		};
+		CD7DAFEC325EAF551E96F102BAE310A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C09D201BF6158E843150A0AF6AA7F0 /* OKImageDownloader.modulemap */,
+				C562576C460B85F67FA3A3906A00FB4D /* OKImageDownloader.xcconfig */,
+				BBFF14D0380B58F88867525D623ACF2F /* OKImageDownloader-dummy.m */,
+				4B51CD17DF32523E34246E39E8BEEE83 /* OKImageDownloader-prefix.pch */,
+				7F4E51DE69BB80CD59B21499EB8F4839 /* OKImageDownloader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OKImageDownloader";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				59BF70FE8FEC370CF83026C66E903554 /* Pods */,
+				F40045E5E29CB3FA8AFD5393796878F5 /* Products */,
+				9A35F1CC48382AAD26C11B2839DEE378 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40045E5E29CB3FA8AFD5393796878F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D46F5C242A4803B16730C9CA8EB0ED6 /* libOKImageDownloader.a */,
+				C7E8F4F160F923CC2D25B39E4BB82870 /* libPods-OKConversations.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7548CAB62ECD9A6F979D4C4FEF4C1C2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51FF8504BB481441D0A55F01EA155A67 /* OKImageDownloader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF63413676788C5265A0CC50E105E80F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E126311A31C256E6F6E96F047D164F0 /* Pods-OKConversations-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4DAED14818F28FA89D3647741B00B7EA /* OKImageDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855658150B240066F8095C1C4C89FD97 /* Build configuration list for PBXNativeTarget "OKImageDownloader" */;
+			buildPhases = (
+				7548CAB62ECD9A6F979D4C4FEF4C1C2B /* Headers */,
+				BAB62A6AE6476388FC038ACBD10D35C3 /* Sources */,
+				F4CF2234513111B4FF64851D4FAF1239 /* Frameworks */,
+				6648627A0CCDD94C92F38BDD88A0F337 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OKImageDownloader;
+			productName = OKImageDownloader;
+			productReference = 0D46F5C242A4803B16730C9CA8EB0ED6 /* libOKImageDownloader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7C587CFC5B60E96F608918BEEC7B83C1 /* Pods-OKConversations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81ECD0227F3F690209539366A57AB4A /* Build configuration list for PBXNativeTarget "Pods-OKConversations" */;
+			buildPhases = (
+				AF63413676788C5265A0CC50E105E80F /* Headers */,
+				B36E0167D4F994A851AEAD52C86E3EE2 /* Sources */,
+				CB8063CFA095D706716189ED66991DC2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6C41C20B4CE50C18B7FD02C54EEE6F2 /* PBXTargetDependency */,
+			);
+			name = "Pods-OKConversations";
+			productName = "Pods-OKConversations";
+			productReference = C7E8F4F160F923CC2D25B39E4BB82870 /* libPods-OKConversations.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F40045E5E29CB3FA8AFD5393796878F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DAED14818F28FA89D3647741B00B7EA /* OKImageDownloader */,
+				7C587CFC5B60E96F608918BEEC7B83C1 /* Pods-OKConversations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6648627A0CCDD94C92F38BDD88A0F337 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/OKImageDownloader/OKImageDownloader.modulemap",
+				"${PODS_ROOT}/Headers/Public/OKImageDownloader/OKImageDownloader-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/OKImageDownloader-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/OKImageDownloader/OKImageDownloader.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/OKImageDownloader/OKImageDownloader-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B36E0167D4F994A851AEAD52C86E3EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0043097CA64B1AC5BB7AAC5BDD01C1 /* Pods-OKConversations-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB62A6AE6476388FC038ACBD10D35C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FE40DB125FB2C6C986DB8FCED5B517 /* APIRequest.swift in Sources */,
+				10ADD1F58185B797D248E6E517ED9D69 /* APIUrlLoader.swift in Sources */,
+				FAFDA05367EF7F38DDC19BD10D25CA86 /* CachableContainer.swift in Sources */,
+				4208D5F727CA36C1CCF82455D744A58E /* DataResponse.swift in Sources */,
+				A0F89FFB826227A24BF9A37258678967 /* ImageDownloader.swift in Sources */,
+				099FF4CB554BB6ED19422031B6353776 /* ImageDownloaderError.swift in Sources */,
+				FF05C077B58F00FB8B0CE769E777CB70 /* ImageDownloaderReceipt.swift in Sources */,
+				9FE347A47867511E774594B0DC389805 /* ImageDownloaderReceiptHandling.swift in Sources */,
+				B37C1216D74F0E38E43665F47484FDA0 /* ImageDownloaderRequest.swift in Sources */,
+				EA89E8DF27BFEFD887CBB2FDF753E30E /* ImageDownloading.swift in Sources */,
+				F3D128BF335D5BEE496C66AD32E0D4BA /* Int+FileSizeConverter.swift in Sources */,
+				5B6EBB9678C4D11099E20FC028490019 /* OKImageDownloader-dummy.m in Sources */,
+				4B2D1051C001C57A4662C8C8577DD296 /* UIImage+Downloading.swift in Sources */,
+				D28C8C98B4E5DA8B80F9796DC15C2BE8 /* UIImageView+ImageDownloader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6C41C20B4CE50C18B7FD02C54EEE6F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OKImageDownloader;
+			target = 4DAED14818F28FA89D3647741B00B7EA /* OKImageDownloader */;
+			targetProxy = AD57D08322696E35FE6684B323C6C387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07AE88F9C339F78B10E8FC3325A0735C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C562576C460B85F67FA3A3906A00FB4D /* OKImageDownloader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OKImageDownloader/OKImageDownloader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/OKImageDownloader/OKImageDownloader.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OKImageDownloader;
+				PRODUCT_NAME = OKImageDownloader;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EB10741F705746424962A115CCCE5E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77B89B0F1979076B4916E25206D5BDC /* Pods-OKConversations.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OKConversations/Pods-OKConversations.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1771E5703AA641252365B17449D9E723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4662380A49A14E14C1C87835AA6836C1 /* Pods-OKConversations.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OKConversations/Pods-OKConversations.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1F8D029FDD12DA6461A20D656D15EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C562576C460B85F67FA3A3906A00FB4D /* OKImageDownloader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OKImageDownloader/OKImageDownloader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/OKImageDownloader/OKImageDownloader.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OKImageDownloader;
+				PRODUCT_NAME = OKImageDownloader;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855658150B240066F8095C1C4C89FD97 /* Build configuration list for PBXNativeTarget "OKImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AE88F9C339F78B10E8FC3325A0735C /* Debug */,
+				A1F8D029FDD12DA6461A20D656D15EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81ECD0227F3F690209539366A57AB4A /* Build configuration list for PBXNativeTarget "Pods-OKConversations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB10741F705746424962A115CCCE5E4 /* Debug */,
+				1771E5703AA641252365B17449D9E723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
